@@ -20,6 +20,26 @@
 
   <div class="Genre">Roman Graphique</div>
 
+
+  <div class="rating"><select class="star-rating" aria-label="Note utilisateur">
+      <option value="">Select a rating</option>
+      <option value="5">Excellent</option>
+      <option value="4">Very Good</option>
+      <option value="3">Average</option>
+      <option value="2">Poor</option>
+      <option value="1">Terrible</option>
+    </select>
+
+    <!-- 💡 Script pour gérer le rating d'un livre -->
+    <script src="scripts/star-rating.min.js"></script>
+    <script>
+      var stars = new StarRating(".star-rating", {
+        tooltip: "Choisissez votre note",
+      });
+    </script>
+  </div>
+
+
   <div class="description">Fable d’anticipation, allégorie hallucinée, Saccage se lit comme un poème graphique en forme
     de constat pour le moins amer, et présente un monde en pleine déliquescence, sidérant comme un massacre, effrayant
     comme un cauchemar – mais Saccage est bien plus qu’un délire visuel, c’est une véritable œuvre coup-de-poing...
@@ -30,23 +50,8 @@
   <div class="commentaires"> Laisser un commentaire...</div>
 
   <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-  <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
-        </select>
-    -->
-  <!-- 💡 Script pour gérer le rating d'un livre -->
-  <script src="scripts/star-rating.min.js"></script>
-  <script>
-    var stars = new StarRating(".star-rating", {
-      tooltip: "Choisissez votre note",
-    });
-  </script>
+
+
 </body>
 
 </html>
