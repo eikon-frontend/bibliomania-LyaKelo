@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
-        </select>
-    -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- 🦊 Votre page ici -->
+
+  <div class="croix"> <img src="img/croix.png" alt=""></div>
+
+  <div class="couverture"><img src="img/couvertures/saccage_couverture.jpg" alt="couverture"></div>
+
+  <div class="Title">Saccage</div>
+
+  <div class="Author">Frederik Peeters</div>
+
+  <div class="Genre">Roman Graphique</div>
+
+  <div class="buttons">
+    <div class="butons"> <img src="img/plus.png"></div>
+    <div class="butons"> <img src="img/coeur.png" alt=""></div>
+    <div class="butons"> <img src="img/etoile.png"></div>
+  </div>
+
+
+  <div class="rating"><select class="star-rating" aria-label="Note utilisateur">
+      <option value="">Select a rating</option>
+      <option value="5">Excellent</option>
+      <option value="4">Very Good</option>
+      <option value="3">Average</option>
+      <option value="2">Poor</option>
+      <option value="1">Terrible</option>
+    </select>
+
     <!-- 💡 Script pour gérer le rating d'un livre -->
     <script src="scripts/star-rating.min.js"></script>
     <script>
       var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
+        tooltip: false,
       });
     </script>
-  </body>
+  </div>
+
+
+  <div class="description">Fable d’anticipation, allégorie hallucinée, Saccage se lit comme un poème graphique en forme
+    de constat pour le moins amer, et présente un monde en pleine déliquescence, sidérant comme un massacre, effrayant
+    comme un cauchemar – mais Saccage est bien plus qu’un délire visuel, c’est une véritable œuvre coup-de-poing...
+    <br>
+    <div class="voir-plus">voir plus..</div>
+  </div>
+
+  <div class="commentaires"> Laisser un commentaire...</div>
+
+  <div class="footer">
+    <img src="img/footer.png" alt="">
+  </div>
+  <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
+
+
+</body>
+
 </html>
