@@ -12,13 +12,21 @@
 <body>
   <!-- 🦊 Votre page ici -->
 
-  <img src="img/couvertures/saccage_couverture.jpg" alt="couverture">
+  <div class="croix"> <img src="img/croix.png" alt=""></div>
+
+  <div class="couverture"><img src="img/couvertures/saccage_couverture.jpg" alt="couverture"></div>
 
   <div class="Title">Saccage</div>
 
   <div class="Author">Frederik Peeters</div>
 
   <div class="Genre">Roman Graphique</div>
+
+  <div class="buttons">
+    <div class="butons"> <img src="img/plus.png"></div>
+    <div class="butons"> <img src="img/coeur.png" alt=""></div>
+    <div class="butons"> <img src="img/etoile.png"></div>
+  </div>
 
 
   <div class="rating"><select class="star-rating" aria-label="Note utilisateur">
@@ -34,7 +42,7 @@
     <script src="scripts/star-rating.min.js"></script>
     <script>
       var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
+        tooltip: false,
       });
     </script>
   </div>
@@ -44,11 +52,14 @@
     de constat pour le moins amer, et présente un monde en pleine déliquescence, sidérant comme un massacre, effrayant
     comme un cauchemar – mais Saccage est bien plus qu’un délire visuel, c’est une véritable œuvre coup-de-poing...
     <br>
-    voir plus..
+    <div class="voir-plus">voir plus..</div>
   </div>
 
   <div class="commentaires"> Laisser un commentaire...</div>
 
+  <div class="footer">
+    <img src="img/footer.png" alt="">
+  </div>
   <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
 
 
